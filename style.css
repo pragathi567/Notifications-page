@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 15px;
+    background-color: hsl(210, 60%, 98%) ;
+    color:hsl(219, 14%, 63%) ;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 700px;
+    margin:24px auto;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0,.2);
+    border-radius: 6px;
+}
+.wrapper{
+    padding:22px ;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notifications{
+    display: flex;
+    align-items: center;
+}
+.notifications h1{
+    color: hsl(224, 21%, 14%);
+    font-size: 28px;
+}
+.notifications p{
+    padding: 2px 12px;
+    color: #fff;
+    background-color:hsl(219, 85%, 26%) ;
+    border-radius: 5px;
+    margin-left: 6px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.read{
+    color:hsl(219, 14%, 63%) ;
+    font-weight: 400;
+}
+
+.single-notification{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+}
+.single-notification .name{
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    margin-right: 5px;
+}
+.single-notification .post{
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+    margin-left: 5px;
+}
+
+.single-notification .group{
+    color: hsl(219, 85%, 26%);
+    font-weight: 800;
+    margin-left: 5px;
+}
+.info p{
+    margin-bottom: 2px;
+}
+.avatar img{
+    width: 50px;
+}
+
+.message {
+    align-items: flex-start;
+}
+
+.message .msg{
+    color: hsl(219, 12%, 42%);
+    border: 1px solid hsl(211, 68%, 94%);
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-left: 4%;
+    margin: 20px 0;
+    margin-bottom: 10px;
+}
+.msg:hover{
+background-color: hsl(211, 68%, 94%);
+cursor: pointer;
+}
+.comments{
+    justify-content: space-between;
+}
+.comment{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.comment-profile img{
+    width: 50px;
+    cursor: pointer;
+}
+
+.unseen{
+    padding: 8px;
+    background-color:hsl(211, 68%, 94%);
+    border-radius: 6px;
+}
+
+.dot{
+    background-color: red;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 7px;
+}
+
+.read:hover,.post:hover,.name:hover,.group:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+@media (max-width:600px){
+    body{
+        font-size: 14px;
+        line-height: 1.4;
+     }
+     .container{
+        margin: 10px auto;
+     }
+     .wrapper{
+        padding: 14px;
+        padding-bottom: 0;
+     }
+     .msg{
+        font-size: 13px;
+     }
+     .notifications p{
+        padding: 1px 10px;
+        margin-left: 4px
+     }
+     .notifications h1{
+        font-size: 22px;
+     }
+     .single-notification{
+        align-items: flex-start;
+     }
+     .top{
+        margin-bottom: 20px;
+     }
+}
